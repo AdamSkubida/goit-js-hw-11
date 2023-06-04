@@ -1,6 +1,80 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  margin: 0 auto;
+}
+.form-box {
+  border-radius: 0 0 20px 20px;
+  border-bottom: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.input {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.submit-button {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+  transform: rotate(0deg);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  transition: 100ms ease-in-out;
+  transform: rotate(15deg);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 30px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.photo {
+  border-radius: 30px;
+}
+
+.load-more-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.load-more {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.not__visable {
+  display: none;
 }
